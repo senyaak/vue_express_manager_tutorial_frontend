@@ -1,9 +1,14 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "strict": true,
-    "module": "es2015",
+    "module": "commonjs",
     "moduleResolution": "node",
+    "noImplicitAny": false,
     "experimentalDecorators": true
-  }
+  },
+  "filesGlob": [
+    "./src/**/*.ts",
+    "./node_modules/**/*.ts"
+  ]
 }
