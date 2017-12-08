@@ -18,6 +18,9 @@ module.exports = {
     publicPath: '/dist/',
     filename: 'build.js'
   },
+  watchOptions: {
+        poll: true
+  },
   module: {
     rules: [
     {
