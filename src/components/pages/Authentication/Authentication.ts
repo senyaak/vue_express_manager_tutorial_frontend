@@ -2,8 +2,8 @@ import Vue from "vue";
 import Component from "vue-class-component";
 import AuthenticationCtr from "./index";
 import { Credentials } from "./index";
-
 import "./Authentication.scss";
+
 @Component({
   template: `
   <div class="l-auth-container">

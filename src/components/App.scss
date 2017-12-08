@@ -1,6 +1,6 @@
-@import "./../assets/styles";
+@import "./../assets/style.scss";
  body {
-   background: url('./assets/images/background.jpg') no-repeat center center fixed;
+   background: url('./../assets/images/background.jpg') no-repeat center center fixed;
    &:after {
      content: '';
      position: fixed;

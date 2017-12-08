@@ -6,7 +6,6 @@ Vue.use(Vuetify);
 import * as VueCookie from "vue-cookie";
 Vue.use(VueCookie);
 import("./../node_modules/vuetify/dist/vuetify.min.css");
-
 Vue.config.productionTip = false;
 
 let v = new Vue({
