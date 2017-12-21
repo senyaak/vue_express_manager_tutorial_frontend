@@ -4,11 +4,11 @@ import RouterView from "vue";
 import "./App.scss";
 @Component({
   template: `
-  <div class="test">
-    APP
-    <router-view/>
-  </div>
-`,
+  <v-app>
+    <v-container>
+      <router-view/>
+    </v-container>
+  </v-app>`,
 })
 export default class App extends Vue {
   components: [

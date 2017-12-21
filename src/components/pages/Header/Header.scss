@@ -1,12 +1,10 @@
 @import "./../../../assets/style.scss";
-.l-auth {
+.l-header-container {
   background-color: $background-color;
-  padding: 15px;
-  margin: 45px auto;
+  margin: 0 auto;
+  padding: 0 15px;
   min-width: 272px;
-  max-width: 320px;
-  animation: bounceIn 1s forwards ease;
-  label, input, .icon {
+  label, input, .icon, .input-group__selections__comma {
     color: #29b6f6!important;
   }
   .input-group__details {
@@ -14,8 +12,7 @@
       background-color: $border-color-input !important;
     }
   }
-}
-.l-signup {
-  @extend .l-auth;
-  animation: slideInFromLeft 1s forwards ease;
+  .btn {
+    margin-top: 15px;
+  }
 }

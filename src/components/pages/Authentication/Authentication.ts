@@ -58,7 +58,7 @@ import "./Authentication.scss";
        </v-form>
      </div>
      <!-- -->
-     <v-snackbar timeout="6000"
+     <v-snackbar :timeout="6000"
                  bottom="bottom"
                  color="red lighten-1"
                  v-model="snackbar">
