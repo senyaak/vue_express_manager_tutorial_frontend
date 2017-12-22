@@ -5,7 +5,8 @@
   "author": "Senyaak <senya-arseniy@mail.ru>",
   "private": true,
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "install": "./node_modules/webpack/bin/webpack.js"
   },
   "dependencies": {
     "axios": "^0.17.1",
