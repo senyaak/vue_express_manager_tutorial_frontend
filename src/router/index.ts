@@ -11,7 +11,7 @@ import List from "./../components/List/List";
 
 // Register components
 Vue.component("app-header", Header);
-Vue.component("budget-list", List)
+Vue.component("list", List)
 
 Vue.use(VueRouter)
 
@@ -25,9 +25,9 @@ const router = new VueRouter({
         header: Header,
         budgetList: List,
       },
-      meta: {
-        requiredAuth: true
-      }
+      // meta: {
+      //   requiredAuth: true
+      // }
     }, {
       path: "/login",
       name: "Authentication",
@@ -38,11 +38,11 @@ const router = new VueRouter({
 
 // redirect ro login page if not authenticated
 router.beforeEach((to, from, next) => {
-  if (to.meta.requiredAuth) {
+  if (to.path !== '/login') {
     if (Auth.default.user.authenticated) {
       next()
     } else {
-      router.push("/login")
+      router.push('/login')
     }
   } else {
     next()

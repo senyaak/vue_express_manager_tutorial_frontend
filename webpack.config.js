@@ -35,6 +35,10 @@ module.exports = {
         fallback: "style-loader"
       })
     }, {
+        test: /\.html$/,
+        exclude: /node_modules/,
+        loader: "html-loader?exportAsEs6Default"
+    }, {
       test: /\.tsx?$/,
       loader: 'ts-loader',
       exclude: /node_modules/,
@@ -51,7 +55,7 @@ module.exports = {
   ]
 },
   resolve: {
-    extensions: ['.ts', 'tsx', '.js', '.vue', '.json', 'scss', 'css', 'sass'],
+    extensions: ['.ts', 'tsx', '.js', '.vue', '.json', 'scss', 'css', 'sass', 'html'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js'
     }

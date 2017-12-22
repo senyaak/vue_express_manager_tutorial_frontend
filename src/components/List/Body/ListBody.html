@@ -1,0 +1,24 @@
+<section class="l-list-body">
+ <div class="md-list-item"
+      v-if="data != null"
+      v-for="item in data">
+
+    <div :class="budgetsVisible ? 'md-budget-info white--text' : 'md-client-info white--text'"
+         v-for="info in item"
+         v-if="info != item._id">
+      {{ info }}
+    </div>
+
+    <div :class="budgetsVisible ? 'l-budget-actions white--text' : 'l-client-actions white--text'">
+      <v-btn small flat color="light-blue lighten-1">
+        <v-icon small>visibility</v-icon>
+      </v-btn>
+      <v-btn small flat color="yellow accent-1">
+        <v-icon>mode_edit</v-icon>
+      </v-btn>
+      <v-btn small flat color="red lighten-1">
+        <v-icon>delete_forever</v-icon>
+      </v-btn>
+    </div>
+  </div>
+</section>
