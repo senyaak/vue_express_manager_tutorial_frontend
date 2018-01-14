@@ -6,7 +6,8 @@
   "private": true,
   "scripts": {
     "build": "webpack",
-    "install": "./node_modules/webpack/bin/webpack.js"
+    "install": "./node_modules/webpack/bin/webpack.js",
+    "watch": "./node_modules/webpack/bin/webpack.js --watch"
   },
   "dependencies": {
     "axios": "^0.17.1",

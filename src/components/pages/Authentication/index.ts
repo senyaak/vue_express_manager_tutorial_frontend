@@ -2,8 +2,8 @@ import Vue from "vue";
 import Axios from "axios";
 // FIXME ts-loader bug
 // import "vue-cookie/types/index";
-import router from "./../../../router/index";
 // import Authentication from "./Authentication";
+import router from "./../../../router/index";
 
 const BudgetManagerAPI = `http://${window.location.hostname}:3001`
 
