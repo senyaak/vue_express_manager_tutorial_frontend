@@ -1,7 +1,7 @@
 <header class="l-header-container">
   <v-layout row wrap :class="budgetsVisible ? 'l-budgets-header' : 'l-clients-header'">
     <v-flex xs12 md5>
-      <v-text-field v-model="search"
+      <v-text-field v-model="searchValue"
                     label="Search"
                     append-icon="search"
                     :color="budgetsVisible ? 'light-blue lighten-1' : 'green lighten-1'">
@@ -21,7 +21,8 @@
                 :color="budgetsVisible ? 'light-blue lighten-1' : 'green lighten-1'"
                 v-model="status"
                 :items="statusItems"
-                single-line>
+                single-line
+                @change="selectState">
       </v-select>
     </v-flex>
 

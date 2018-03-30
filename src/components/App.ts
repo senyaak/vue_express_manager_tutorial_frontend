@@ -11,8 +11,4 @@ import "./App.scss";
   </v-app>`,
 })
 export default class App extends Vue {
-  components: [
-    RouterView
-  ];
-  // @Prop() name: string;
 };

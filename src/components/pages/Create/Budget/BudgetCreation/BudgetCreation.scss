@@ -1,0 +1,63 @@
+@import "~@/assets/style";
+ .uppercased {
+   text-transform: uppercase;
+ }
+ .l-budget-creation {
+   label, input, .icon, .input-group__selections__comma, textarea {
+     color: #29b6f6!important;
+   }
+   .input-group__details {
+     &:before {
+       background-color: $border-color-input !important;
+     }
+   }
+   .input-group__input {
+     border-color: $border-color-input !important;
+     .input-group--text-field__prefix {
+       margin-bottom: 3px !important;
+     }
+   }
+   .input-group--focused {
+     .input-group__input {
+       border-color: #29b6f6!important;
+     }
+   }
+ }
+ .md-budget-state-hint {
+   margin: 10px 0;
+   display: block;
+   width: 100%;
+ }
+ .md-budget-state {
+   background-color: rgba(41, 182, 246, .6);
+   display: flex;
+   height: 35px;
+   width: 100%;
+   font-size: 14px;
+   align-items: center;
+   justify-content: center;
+   border-radius: 2px;
+   margin: 10px 0 15px;
+ }
+ .l-budget-item {
+   align-items: center;
+ }
+ .md-budget-item-subtotal {
+   font-size: 16px;
+   text-align: center;
+   display: block;
+ }
+ .md-budget-item-total {
+   font-size: 22px;
+   text-align: center;
+   display: block;
+   width: 100%;
+   margin: 30px 0 10px;
+ }
+ .md-add-item-btn {
+   margin-top: 30px !important;
+   display: block;
+ }
+ .list__tile__title, .input-group__selections {
+   text-transform: uppercase !important;
+ }

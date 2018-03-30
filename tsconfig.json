@@ -5,7 +5,11 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "noImplicitAny": false,
-    "experimentalDecorators": true
+    "experimentalDecorators": true,
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["./*"]
+    }
   },
   "filesGlob": [
     "./src/**/*.ts",

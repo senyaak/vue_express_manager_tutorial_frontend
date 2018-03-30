@@ -32,7 +32,7 @@ module.exports = {
           loader: "sass-loader"
         }],
         // use style-loader in development
-        fallback: "style-loader"
+        fallback: "style-loader",
       })
     }, {
         test: /\.html$/,
@@ -57,7 +57,8 @@ module.exports = {
   resolve: {
     extensions: ['.ts', 'tsx', '.js', '.vue', '.json', 'scss', 'css', 'sass', 'html'],
     alias: {
-      'vue$': 'vue/dist/vue.esm.js'
+      'vue$': 'vue/dist/vue.esm.js',
+      '@': path.resolve(__dirname, 'src'),
     }
   },
   devServer: {

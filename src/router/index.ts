@@ -6,8 +6,9 @@ import Authentication from "./../components/pages/Authentication/Authentication"
 import Home from "../components/pages/Home";
 
 // Global components
-import Header from "./../components/pages/Header/Header";
-import List from "./../components/List/List";
+import Header from "@/components/pages/Header/Header";
+import List from "@/components/List/List";
+import Create from "@/components/pages/Create/Create";
 
 // Register components
 Vue.component("app-header", Header);
@@ -23,7 +24,8 @@ const router = new VueRouter({
       components: {
         default: Home,
         header: Header,
-        budgetList: List,
+        list: List,
+        create: Create,
       },
       // meta: {
       //   requiredAuth: true

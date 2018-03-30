@@ -1,0 +1,32 @@
+<div class="l-client-creation">
+  <v-layout row wrap>
+    <v-flex xs12 md4>
+      <v-text-field label="Name"
+                    v-model="client.name"
+                    required
+                    color="green lighten-1">
+      </v-text-field>
+    </v-flex>
+
+    <v-flex xs12 md3 offset-md1>
+      <v-text-field label="Email"
+                    v-model="client.email"
+                    required
+                    color="green lighten-1">
+      </v-text-field>
+    </v-flex>
+
+    <v-flex xs12 md3 offset-md1>
+      <v-text-field label="Phone"
+                    v-model="client.phone"
+                    required
+                    mask="phone"
+                    color="green lighten-1">
+      </v-text-field>
+    </v-flex>
+
+    <v-flex xs12 md2 offset-md10>
+      <v-btn block color="md-add-item-btn green lighten-1" @click.native="saveClient(client)">Save</v-btn>
+    </v-flex>
+  </v-layout>
+</div>

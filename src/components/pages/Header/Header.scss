@@ -1,4 +1,4 @@
-@import "./../../../assets/style.scss";
+@import "~@/assets/style";
 .l-header-container {
   background-color: $background-color;
   margin: 0 auto;
@@ -22,4 +22,7 @@
   .btn {
     margin-top: 15px;
   }
+}
+.list__tile__title, .input-group__selections {
+  text-transform: uppercase !important;
 }
